@@ -1,0 +1,29 @@
+# === Go build output ===
+*.exe
+*.test
+*.out
+/build/
+bin/
+assets/
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Node related ===
+node_modules/
+# package-lock.json bisa tetap di-track, tapi jika hanya dipakai sekali boleh di-ignore:
+package-lock.json
+
+# === Templ generated Go files ===
+**/*_templ.go
+
+# === Environment config ===
+.env
+.env.*

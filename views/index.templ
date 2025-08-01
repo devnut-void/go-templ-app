@@ -1,0 +1,14 @@
+package views
+
+import "go-templ-app/views/components"
+
+templ Index() {
+@components.Layout("Home") {
+<h1 class="text-4xl font-bold mb-4">Selamat Datang!</h1>
+<form hx-post="/greet" hx-target="#greeting" hx-swap="outerHTML" class="flex flex-col gap-4">
+  <input type="text" name="name" placeholder="Masukkan namamu..." class="border p-2 rounded w-full">
+  <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Sapa!</button>
+</form>
+<div id="greeting" class="mt-4 text-xl"></div>
+}
+}

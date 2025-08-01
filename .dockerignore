@@ -1,0 +1,7 @@
+.git
+.gitignore
+go-templ-app
+
+assets
+node_modules
+package.json
